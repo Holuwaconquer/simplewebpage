@@ -11,7 +11,19 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
     <h1>Welcome to my Website!</h1>
+    <button id="changebg">Click me</button>
+
+    <script>
+        const changeBg = document.getElementById("changebg")
+        // changeBg.onClick = () => {
+        //     changeBackground()
+        // }
+        const changeBackground = () => {
+            document.getElementById("body").style.backgroundColor = "orange"
+        }
+        changeBg.onclick = () => {changeBackground()}
+    </script>
 </body>
 </html>
